@@ -44,16 +44,13 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- FONT
+  <!-- Preload fonts
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="preload" href="../fonts/dm-serif-display-v4-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../fonts/inter-v2-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  
-<link rel="stylesheet" href="/css/dark.css">
-
   
 <link rel="stylesheet" href="/css/normalize.css">
 
@@ -69,47 +66,64 @@
   
 <link rel="stylesheet" href="/css/prism-line-numbers.css">
 
+  <!-- User css -->
+  
+  
+<link rel="stylesheet" href="/css/user.css">
+
+  
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="/images/favicon.png">
 
+  <!-- Custom Theme Color Style
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <style>
-    a:not(.icon) {
-      text-decoration-color: #0FA0CE;
-      background-image: linear-gradient(to bottom, rgba(0,0,0, 0.0) 50%, #0FA0CE 50%);
-    }
-    blockquote {
-      border-left: 8px solid #0FA0CE;
-    }
-    .nanobar .bar {
-      background: #0FA0CE;
-    }
-    .button.button-primary:hover,
-    button.button-primary:hover,
-    input[type="submit"].button-primary:hover,
-    input[type="reset"].button-primary:hover,
-    input[type="button"].button-primary:hover,
-    .button.button-primary:focus,
-    button.button-primary:focus,
-    input[type="submit"].button-primary:focus,
-    input[type="reset"].button-primary:focus,
-    input[type="button"].button-primary:focus {
-      background-color: #0FA0CE;
-      border-color: #0FA0CE;
-    }
-    input[type="email"]:focus,
-    input[type="number"]:focus,
-    input[type="search"]:focus,
-    input[type="text"]:focus,
-    input[type="tel"]:focus,
-    input[type="url"]:focus,
-    input[type="password"]:focus,
-    textarea:focus,
-    select:focus {
-      border: 1px solid #0FA0CE;
-    }
-  </style>
+  a:not(.icon) {
+    text-decoration-color: #0FA0CE;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 50%,
+      #0FA0CE 50%
+    );
+  }
+  blockquote {
+    border-left: 8px solid #0FA0CE;
+  }
+  .nanobar .bar {
+    background: #0FA0CE;
+  }
+  .button.button-primary:hover,
+  button.button-primary:hover,
+  input[type="submit"].button-primary:hover,
+  input[type="reset"].button-primary:hover,
+  input[type="button"].button-primary:hover,
+  .button.button-primary:focus,
+  button.button-primary:focus,
+  input[type="submit"].button-primary:focus,
+  input[type="reset"].button-primary:focus,
+  input[type="button"].button-primary:focus {
+    background-color: #0FA0CE;
+    border-color: #0FA0CE;
+  }
+  input[type="email"]:focus,
+  input[type="number"]:focus,
+  input[type="search"]:focus,
+  input[type="text"]:focus,
+  input[type="tel"]:focus,
+  input[type="url"]:focus,
+  input[type="password"]:focus,
+  textarea:focus,
+  select:focus {
+    border: 1px solid #0FA0CE;
+  }
+</style>
+
+  <!-- Google Analytics (With Privacy Settings On)
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  
+
 <meta name="generator" content="Hexo 5.2.0"></head>
 
 <body>
@@ -144,7 +158,7 @@
     </h1>
   </div>
 
-  <div class="six columns ml-1" style="max-width: 200px">
+  <div class="six columns ml-1">
     <h1 class="mt-2">
       Welcome!
     </h1>
@@ -153,14 +167,20 @@
   <div class="twelve columns">
     <div class="row">
       <div class="nine columns left">
-        <a href="/" class="link">Home</a>
+        <a href="/">Home</a>
         
-          <a href="/Works" class="ml link">Works</a>
+          
+          <a href="/Works" class="ml">Works</a>
+          
         
-          <a href="/About" class="ml link">About</a>
+          
+          <a href="/About" class="ml">About</a>
+          
         
         
-          <a href="mailto:418819127.hi@gmail.com" target="_blank" class="ml">email</a>
+          
+            <a href="mailto:418819127.hi@gmail.com" target="_blank" class="ml">Email</a>
+          
         
       </div>
     </div>
@@ -201,8 +221,8 @@
   
     <div class="eight columns">
       <p id="madewith">Made with ❤ and
-        <a class="footer-link icon" href="https://hexo.io/themes/#Minima" target="_blank" style="text-decoration: none;" rel="noreferrer" aria-label="Hexo.js">
-        <svg class="svg-hov" style="width: 15px; fill: #03adfc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>Hexo.js</title><path d="M12 .007L1.57 6.056V18.05L12 23.995l10.43-6.049V5.952L12 .007zm4.798 17.105l-.939.521-.939-.521V12.94H9.08v4.172l-.94.521-.938-.521V6.89l.939-.521.939.521v4.172h5.84V6.89l.94-.521.938.521v10.222z"/></svg>
+        <a class="footer-link icon" href="https://hexo.io" target="_blank" style="text-decoration: none;" rel="noreferrer" aria-label="Hexo.io">
+        <svg class="hexo svg-hov" width="14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>Hexo.js</title><path d="M12 .007L1.57 6.056V18.05L12 23.995l10.43-6.049V5.952L12 .007zm4.798 17.105l-.939.521-.939-.521V12.94H9.08v4.172l-.94.521-.938-.521V6.89l.939-.521.939.521v4.172h5.84V6.89l.94-.521.938.521v10.222z"/></svg>
         </a>
         
         at <a href="https://zh.wikipedia.org/zh-cn/%E5%B9%BF%E8%A5%BF%E5%B8%88%E8%8C%83%E5%A4%A7%E5%AD%A6" target="_blank" rel="noreferrer">广西师范大学</a>.</p>
