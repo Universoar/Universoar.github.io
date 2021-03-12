@@ -11,34 +11,34 @@
   <meta charset="utf-8">
 
   
-  <title>Universoar的博客</title>
+  <title>使用商业frp服务架设Minecraft服务器</title>
   
-  <link rel="canonical" href="https://universoar.github.io/">
+  <link rel="canonical" href="https://universoar.github.io/2021/03/11/%E4%BD%BF%E7%94%A8%E5%95%86%E4%B8%9Afrp%E6%9C%8D%E5%8A%A1%E6%9E%B6%E8%AE%BEMinecraft%E6%9C%8D%E5%8A%A1%E5%99%A8/">
   
-  <meta name="description" content="">
+  <meta name="description" content="前言我在网上看到有很多使用frp架设Minecraft服务器的文章，但是大多是自己租用云服务器建立frp服务。可是对于开私人服务器的服主来说，云服务器的租用成本高，并且带宽也不足以支撑游戏服务器的运行。相比之下，购买商业frp服务不仅不需要服主维护frp服务，而且提供的带宽更大、所需的价格也更实惠。">
   
   
   <meta name="author" content="Universoar">
   
-  <meta property="og:image" content="https://universoar.github.io/images/thumbnail.jpg">
+  <meta property="og:image" content="https://universoar.github.ioundefined">
   
   <meta property="og:site_name" content="Universoar的博客" />
   <meta property="og:type" content="article" />
-  <meta property="og:title" content="Universoar的博客" />
+  <meta property="og:title" content="使用商业frp服务架设Minecraft服务器" />
   
-  <meta property="og:description" content="">
+  <meta property="og:description" content="前言我在网上看到有很多使用frp架设Minecraft服务器的文章，但是大多是自己租用云服务器建立frp服务。可是对于开私人服务器的服主来说，云服务器的租用成本高，并且带宽也不足以支撑游戏服务器的运行。相比之下，购买商业frp服务不仅不需要服主维护frp服务，而且提供的带宽更大、所需的价格也更实惠。">
   
-  <meta property="og:url" content="https://universoar.github.io/" />
+  <meta property="og:url" content="https://universoar.github.io/2021/03/11/%E4%BD%BF%E7%94%A8%E5%95%86%E4%B8%9Afrp%E6%9C%8D%E5%8A%A1%E6%9E%B6%E8%AE%BEMinecraft%E6%9C%8D%E5%8A%A1%E5%99%A8/" />
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Universoar的博客">
+  <meta name="twitter:title" content="使用商业frp服务架设Minecraft服务器">
   
-  <meta name="twitter:description" content="">
+  <meta name="twitter:description" content="前言我在网上看到有很多使用frp架设Minecraft服务器的文章，但是大多是自己租用云服务器建立frp服务。可是对于开私人服务器的服主来说，云服务器的租用成本高，并且带宽也不足以支撑游戏服务器的运行。相比之下，购买商业frp服务不仅不需要服主维护frp服务，而且提供的带宽更大、所需的价格也更实惠。">
   
   
-  <meta name="twitter:image" content="https://universoar.github.io/images/thumbnail.jpg">
+  <meta name="twitter:image" content="https://universoar.github.ioundefined">
   
-  <meta name="twitter:url" content="https://universoar.github.io/" />
+  <meta name="twitter:url" content="https://universoar.github.io/2021/03/11/%E4%BD%BF%E7%94%A8%E5%95%86%E4%B8%9Afrp%E6%9C%8D%E5%8A%A1%E6%9E%B6%E8%AE%BEMinecraft%E6%9C%8D%E5%8A%A1%E5%99%A8/" />
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -189,48 +189,42 @@
 </div>
 
         <div class="trans">
-          <div class="row">
-  <div class="column">
-    <!-- Main information, edit it on theme/_config.yml -->
-    <h2 class="mb-2">我是Universoar</h2>
-    <p>一位来自广西师范大学软件学院的大三学生</p>
-    <p>这里是我的博客，我在这里记录一些开发时遇到的坑和学到的知识。如果我的博客对你有帮助，可以到GitHub给我一颗小星星。⭐😉</p>
-  </div>
-</div>
+            <h2>使用商业frp服务架设Minecraft服务器</h2>
 
-<h3>Recent Posts</h3>
+  <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>我在网上看到有很多使用<a target="_blank" rel="noopener" href="https://sspai.com/post/52523">frp</a>架设Minecraft服务器的文章，但是大多是自己租用云服务器建立frp服务。可是对于开私人服务器的服主来说，云服务器的租用成本高，并且带宽也不足以支撑游戏服务器的运行。相比之下，购买商业frp服务不仅不需要服主维护frp服务，而且提供的带宽更大、所需的价格也更实惠。遂作此文，帮助没有相关经验的服主们。</p>
+<hr>
+<h2 id="服务商"><a href="#服务商" class="headerlink" title="服务商"></a>服务商</h2><p>目前frp服务商数量不多，我认为比较好的有：</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.natfrp.com/">Sakura Frp</a>（运营了一两年，可以白嫖所以人比较多）</li>
+<li><a target="_blank" rel="noopener" href="https://www.nsloop.com/">量子互联</a>（如果付费的话比较便宜，不限流量）</li>
+<li><a target="_blank" rel="noopener" href="https://natapp.cn/">NATAPP</a>（贵）</li>
+</ul>
+<p><a target="_blank" rel="noopener" href="https://www.natfrp.com/peer_vendors.php">其他</a>的我没用过，就不提了。本文以Sakura Frp为例。</p>
+<hr>
+<h2 id="建立隧道"><a href="#建立隧道" class="headerlink" title="建立隧道"></a>建立隧道</h2><p>登录他们的网站之后就可以建立隧道了。</p>
+<p><img src="2021-03-11-%E4%BD%BF%E7%94%A8%E5%95%86%E4%B8%9Afrp%E6%9C%8D%E5%8A%A1%E6%9E%B6%E8%AE%BEMinecraft%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%88%9B%E5%BB%BA%E9%9A%A7%E9%81%93%20SakuraFrp.png" alt="创建隧道"></p>
+<p>其中的必填项：</p>
+<ul>
+<li>穿透节点（选一个服务器，建议要距离近、人数少、带宽大）</li>
+<li>隧道类型（Minecraft Java版是TCP隧道）</li>
+</ul>
+<p>如果是用自己电脑搭Minecraft服务器，本地地址为127.0.0.1。本地端口取决于你的Minecraft服务端配置文件server.properties，通常为25565。</p>
+<hr>
+<h2 id="下载frp客户端"><a href="#下载frp客户端" class="headerlink" title="下载frp客户端"></a>下载frp客户端</h2><p>服务商的网站上通常都有下载地址（i386为32位，amd64为64位）。</p>
+<p><img src="2021-03-11-%E4%BD%BF%E7%94%A8%E5%95%86%E4%B8%9Afrp%E6%9C%8D%E5%8A%A1%E6%9E%B6%E8%AE%BEMinecraft%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%B8%8B%E8%BD%BD%20SakuraFrp.png" alt="下载程序"></p>
+<p>下载后找一个文件夹放进去。</p>
+<p><img src="2021-03-11-%E4%BD%BF%E7%94%A8%E5%95%86%E4%B8%9Afrp%E6%9C%8D%E5%8A%A1%E6%9E%B6%E8%AE%BEMinecraft%E6%9C%8D%E5%8A%A1%E5%99%A8/%E6%96%87%E4%BB%B6%E5%A4%B9%E6%88%AA%E5%9B%BE.png" alt="文件夹"></p>
+<hr>
+<h2 id="配置、运行"><a href="#配置、运行" class="headerlink" title="配置、运行"></a>配置、运行</h2><p>配置运行有多种方式，这里只介绍比较通用的配置方式。</p>
+<p>在网站上找到你创建过的隧道，复制配置文件的文本。</p>
+<p><img src="2021-03-11-%E4%BD%BF%E7%94%A8%E5%95%86%E4%B8%9Afrp%E6%9C%8D%E5%8A%A1%E6%9E%B6%E8%AE%BEMinecraft%E6%9C%8D%E5%8A%A1%E5%99%A8/%E9%9A%A7%E9%81%93%E5%88%97%E8%A1%A8%20SakuraFrp.png" alt="配置文件"></p>
+<p>在存放frp客户端的文件夹中新建一个文本文件，并且命名为frpc.ini。</p>
+<p><img src="2021-03-11-%E4%BD%BF%E7%94%A8%E5%95%86%E4%B8%9Afrp%E6%9C%8D%E5%8A%A1%E6%9E%B6%E8%AE%BEMinecraft%E6%9C%8D%E5%8A%A1%E5%99%A8/%E9%85%8D%E7%BD%AE%E6%88%AA%E5%9B%BE.png" alt="配置"></p>
+<p>至此，frp已经配置完成，双击frpc_windows_amd64.exe就可以启动frp了。</p>
 
+  <p><a class="classtest-link" href="/tags/IT/" rel="tag">IT</a>, <a class="classtest-link" href="/tags/%E6%95%99%E7%A8%8B/" rel="tag">教程</a> — Mar 11, 2021</p>
+  
 
-<div class="row">
-
-  <div class="three columns left lit">
-    <p class="bottom">Mar 11, 2021</p>
-  </div>
-  <div class="nine columns left mb-3">
-    <a href="/2021/03/11/%E4%BD%BF%E7%94%A8%E5%95%86%E4%B8%9Afrp%E6%9C%8D%E5%8A%A1%E6%9E%B6%E8%AE%BEMinecraft%E6%9C%8D%E5%8A%A1%E5%99%A8/" >
-      
-        使用商业frp服务架设Minecraft服务器
-      
-    </a>
-  </div>
-</div>
-
-<div class="row">
-
-  <div class="three columns left lit">
-    <p class="bottom">Nov 9, 2020</p>
-  </div>
-  <div class="nine columns left mb-3">
-    <a href="/2020/11/09/hello-world/" >
-      
-        Hello World
-      
-    </a>
-  </div>
-</div>
-
-
-<h4> <a href="/archives">All Posts</a></h4>
 
           <div class="row mt-2">
   
