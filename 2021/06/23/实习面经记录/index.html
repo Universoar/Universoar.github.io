@@ -11,34 +11,34 @@
   <meta charset="utf-8">
 
   
-  <title>Universoar的博客</title>
+  <title>实习面经记录</title>
   
-  <link rel="canonical" href="https://universoar.github.io/">
+  <link rel="canonical" href="https://universoar.github.io/2021/06/23/%E5%AE%9E%E4%B9%A0%E9%9D%A2%E7%BB%8F%E8%AE%B0%E5%BD%95/">
   
-  <meta name="description" content="">
+  <meta name="description" content="今天参加了一次本地的公司的实习面试，面的后端岗位。回来凭记忆记录一下面试经历。   自我介绍，介绍了自己的IT技能和两个开发项目，项目用了什么框架、库等等。 说一下koa这个项目中怎么实现的用户登录验证？ 答：使用token，存储在客户端，服务器进行校验。   如果用户要注销怎么实现？ 答：应该是在">
   
   
   <meta name="author" content="Universoar">
   
-  <meta property="og:image" content="https://universoar.github.io/images/thumbnail.jpg">
+  <meta property="og:image" content="https://universoar.github.ioundefined">
   
   <meta property="og:site_name" content="Universoar的博客" />
   <meta property="og:type" content="article" />
-  <meta property="og:title" content="Universoar的博客" />
+  <meta property="og:title" content="实习面经记录" />
   
-  <meta property="og:description" content="">
+  <meta property="og:description" content="今天参加了一次本地的公司的实习面试，面的后端岗位。回来凭记忆记录一下面试经历。   自我介绍，介绍了自己的IT技能和两个开发项目，项目用了什么框架、库等等。 说一下koa这个项目中怎么实现的用户登录验证？ 答：使用token，存储在客户端，服务器进行校验。   如果用户要注销怎么实现？ 答：应该是在">
   
-  <meta property="og:url" content="https://universoar.github.io/" />
+  <meta property="og:url" content="https://universoar.github.io/2021/06/23/%E5%AE%9E%E4%B9%A0%E9%9D%A2%E7%BB%8F%E8%AE%B0%E5%BD%95/" />
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Universoar的博客">
+  <meta name="twitter:title" content="实习面经记录">
   
-  <meta name="twitter:description" content="">
+  <meta name="twitter:description" content="今天参加了一次本地的公司的实习面试，面的后端岗位。回来凭记忆记录一下面试经历。   自我介绍，介绍了自己的IT技能和两个开发项目，项目用了什么框架、库等等。 说一下koa这个项目中怎么实现的用户登录验证？ 答：使用token，存储在客户端，服务器进行校验。   如果用户要注销怎么实现？ 答：应该是在">
   
   
-  <meta name="twitter:image" content="https://universoar.github.io/images/thumbnail.jpg">
+  <meta name="twitter:image" content="https://universoar.github.ioundefined">
   
-  <meta name="twitter:url" content="https://universoar.github.io/" />
+  <meta name="twitter:url" content="https://universoar.github.io/2021/06/23/%E5%AE%9E%E4%B9%A0%E9%9D%A2%E7%BB%8F%E8%AE%B0%E5%BD%95/" />
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -189,62 +189,71 @@
 </div>
 
         <div class="trans">
-          <div class="row">
-  <div class="column">
-    <!-- Main information, edit it on theme/_config.yml -->
-    <h2 class="mb-2">我是Universoar</h2>
-    <p>一位来自广西师范大学软件学院的大三学生</p>
-    <p>这里是我的博客，我在这里记录一些开发时遇到的坑和学到的知识。如果我的博客对你有帮助，可以到GitHub给我一颗小星星。⭐😉</p>
-  </div>
-</div>
+            <h2>实习面经记录</h2>
 
-<h3>Recent Posts</h3>
+  <p>今天参加了一次本地的公司的实习面试，面的后端岗位。回来凭记忆记录一下面试经历。</p>
+<hr>
+<ul>
+<li>自我介绍，介绍了自己的IT技能和两个开发项目，项目用了什么框架、库等等。</li>
+<li>说一下koa这个项目中怎么实现的用户登录验证？<ul>
+<li>答：使用token，存储在客户端，服务器进行校验。</li>
+</ul>
+</li>
+<li>如果用户要注销怎么实现？<ul>
+<li>答：应该是在服务器设置token黑名单。</li>
+<li>有没有其他方法？</li>
+<li>答：或许是设置一个过期时间？还有一种方法是用session。</li>
+<li>有什么区别？</li>
+<li>答：session存在服务器，需要消耗内存。</li>
+</ul>
+</li>
+<li>这个项目的数据库表你是怎么设计的？写一下。<ul>
+<li>边写边答：有用户表、文章表和评论表，还有一些属性……</li>
+<li>如果我要查询某用户的所有文章和点赞数，要怎么查询？</li>
+<li>答：应该是用SELECT 文章 FROM 文章表 WHERE 作者=”xxx”;</li>
+</ul>
+</li>
+<li>了解过JOIN语句、LEFT JOIN语句吗？<ul>
+<li>答：没有。（感觉要凉）</li>
+</ul>
+</li>
+<li>Java的 == 和 equals 有什么区别？<ul>
+<li>答：没怎么用过Java，== 应该是比较的值吧？</li>
+</ul>
+</li>
+<li>Java的set和list有什么不同？<ul>
+<li>答：set的元素不是重复的。</li>
+</ul>
+</li>
+<li>list用什么数据结构实现的？<ul>
+<li>答：应该是链表吧。（其实还有数组的，但是个人觉得链表也没错）</li>
+</ul>
+</li>
+<li>双向链表和单向链表有什么性能上的区别吗？<ul>
+<li>答：双向链表——对查询的效率应该会高一点。</li>
+</ul>
+</li>
+<li>平时的兴趣爱好？<ul>
+<li>答：开服务器和朋友玩。</li>
+</ul>
+</li>
+<li>是怎么上的GitHub？<ul>
+<li>答：自己买VPS，用xray搭建。</li>
+</ul>
+</li>
+<li>职业规划（打算在哪里工作、考不考研、什么时候可以入职和打算实习多久等）</li>
+<li>有什么想问的吗？<ul>
+<li>问：我想知道你们是怎么成为一名工程师的呢？</li>
+</ul>
+</li>
+</ul>
+<hr>
+<p>这一次面试算是体会到了行业的内卷和社会的残酷……</p>
+<p>等放假了好好补基础吧。</p>
 
+  <p><a class="classtest-link" href="/tags/IT/" rel="tag">IT</a>, <a class="classtest-link" href="/tags/%E9%9D%A2%E7%BB%8F/" rel="tag">面经</a> — Jun 23, 2021</p>
+  
 
-<div class="row">
-
-  <div class="three columns left lit">
-    <p class="bottom">Jun 23, 2021</p>
-  </div>
-  <div class="nine columns left mb-3">
-    <a href="/2021/06/23/%E5%AE%9E%E4%B9%A0%E9%9D%A2%E7%BB%8F%E8%AE%B0%E5%BD%95/" >
-      
-        实习面经记录
-      
-    </a>
-  </div>
-</div>
-
-<div class="row">
-
-  <div class="three columns left lit">
-    <p class="bottom">Mar 11, 2021</p>
-  </div>
-  <div class="nine columns left mb-3">
-    <a href="/2021/03/11/%E4%BD%BF%E7%94%A8%E5%95%86%E4%B8%9Afrp%E6%9C%8D%E5%8A%A1%E6%9E%B6%E8%AE%BEMinecraft%E6%9C%8D%E5%8A%A1%E5%99%A8/" >
-      
-        使用商业frp服务架设Minecraft服务器
-      
-    </a>
-  </div>
-</div>
-
-<div class="row">
-
-  <div class="three columns left lit">
-    <p class="bottom">Nov 9, 2020</p>
-  </div>
-  <div class="nine columns left mb-3">
-    <a href="/2020/11/09/hello-world/" >
-      
-        Hello World
-      
-    </a>
-  </div>
-</div>
-
-
-<h4> <a href="/archives">All Posts</a></h4>
 
           <div class="row mt-2">
   
